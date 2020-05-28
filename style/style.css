@@ -9,13 +9,28 @@
   position: relative;
   top: 50px;
 }
+section{padding: 5% 0;}
 
-.center{
-  text-align: center;
-}
+.center{text-align: center;}
 
-.px5{
-  padding: 0 5%;
+.px5h{padding: 5% 0;}
+.px5w{padding: 0 5%;}
+
+.txtw{color: white;}
+
+.i_block{display: inline-block;}
+
+.right{text-align: right;}
+
+.no_margin{margin: 0;}
+
+.no_width{width: auto;}
+
+hr{margin: 0;}
+
+.grid li h5{
+  display: inline-block;
+  width: 10%;
 }
 
 /* NAV */
@@ -81,25 +96,51 @@ header .navbar-default img{
   text-decoration: none;
   display: block;
 }
-
 .dropdown-content a:hover {background-color: #ddd;}
-
 .dropdown:hover .dropdown-content {display: block;}
 
-section{
-  padding: 5% 0;
+
+
+
+.test{
+  height: 200px;
 }
 
+#deploy .test > a h4{
+  border-left: 2px solid grey 100%;
+}
+
+
+.carousel-indicators .active{
+  background-color: #006aff;
+}
+.carousel-indicators li{
+  border: 1px solid #006aff;
+}
+.carousel-item {
+    height: 350px;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.carousel-indicators {
+    bottom: -50px;
+}
+
+
+
+
 /* DBUG */
-
-
 
 #top{
   color: white;
   background-image: url(../img/aqua.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 600px; */
+  background-position: center;
+  height: 800px;
 }
 #top h3{
   font-weight: bold;
@@ -152,35 +193,25 @@ section{
   max-height: 70px;
 }
 
-#deploy{
-  height: 600px;
-}
-
 #carosel{
   background-color: #f3f5f9;
-  height: 500px;
+  /* height: 500px; */
 }
 
-#info{
-  height: 440px;
-}
 
 #worldwide{
-  background-color: blue;
-  height: 400px;
+  background: #031b4e url(../img/data-center-map.svg);
 }
 
 #devs{
   background-color: #f3f5f9;
-  height: 500px;
+  /* height: 500px; */
 }
 
 #getstarted{
   background-image: url(../img/bk_start.svg);
-  height: 100px;
 }
 
-footer{
+#footer{
   background-color: hsl(220,95%,8%);
-  height: 300px;
 }
