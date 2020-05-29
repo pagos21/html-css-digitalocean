@@ -71,11 +71,16 @@
 
 #top{
   color: white;
+  font-weight: bold;
   background-image: url(../img/aqua.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 800px;
+}
+
+#top [class*="col-"]{
+  margin: 6% 0;
 }
 #top h3{
   font-weight: bold;
@@ -275,5 +280,9 @@ header .navbar-default img{
     max-width: 70%;
     min-width: 60%;
     margin: 0 auto;
+  }
+  #top{
+    height: auto;
+    background-position: right;
   }
 }
