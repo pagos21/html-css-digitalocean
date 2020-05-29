@@ -5,72 +5,6 @@
   box-sizing: border-box;
 }
 
-#macro_div >*{
-  position: relative;
-  top: 50px;
-}
-section{padding: 5% 0;}
-
-.center{text-align: center;}
-
-.px5h{padding: 5% 0;}
-.px5w{padding: 0 5%;}
-
-.txtw{color: white;}
-
-.i_block{display: inline-block;}
-
-.right{text-align: right;}
-.fright{float: right;}
-
-.no_margin{margin: 0;}
-
-.no_width{width: auto;}
-
-hr{margin: 0;}
-
-.grid li h5{
-  display: inline-block;
-  width: 10%;
-}
-
-/* NAV */
-header .navbar-default img{
-  max-width: 150px;
-}
-
-.navbar-brand{
-  padding: 9px 15px;
-}
-.navbar-right li {
-  padding: 8px;
-}
-
-.navbar-default .navbar-nav  li > a {
-    color: black;
-    background-color: transparent;
-}
-
-.navbar-default .navbar-nav  li > a:hover {
-    color: lightblue;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.collapse .navbar-right li > a{
-  color: #006aff;
-  border: 2px solid #006aff;
-  padding: 7px;
-  border-radius: 10px;
-  font-weight: bold;
-  transition: all .5s;
-}
-
-.navbar-nav.navbar-right > li > a:hover{
-  color: white;
-  background-color: #006aff;
-}
-
 .dropbtn {
   color: #757575;
   border: none;
@@ -96,6 +30,82 @@ header .navbar-default img{
 }
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
+
+/* global vars */
+#macro_div >*{
+  position: relative;
+  top: 50px;
+}
+section{padding: 5% 0;}
+
+.txtg{color: }
+
+.center{text-align: center;}
+
+.px5h{padding: 5% 0;}
+.px5w{padding: 0 5%;}
+.px5{padding: 5%;}
+
+.txtw{color: white;}
+
+.i_block{display: inline-block;}
+
+.right{text-align: right;}
+.fright{float: right;
+  padding: 6px;
+}
+
+.no_margin{margin: 0;}
+
+.no_width{width: auto;}
+
+hr{margin: 0;}
+
+.grid li h5{
+  display: inline-block;
+  width: 10%;
+}
+
+/* NAV */
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+  max-height: 450px;
+}
+
+header .navbar-default img{
+  max-width: 150px;
+}
+
+.navbar-brand{
+  padding: 9px 15px;
+}
+.navbar-right  {
+}
+
+.navbar-default .navbar-nav  li > a {
+    color: black;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav  li > a:hover {
+    color: lightblue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.collapse .navbar-right .h_button{
+  color: #006aff;
+  border: 2px solid #006aff;
+  padding: 7px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all .5s;
+}
+
+.navbar-nav.navbar-right .h_button:hover{
+  color: white;
+  background-color: #006aff;
+}
 
 .form-control{
   margin: 5px 0;
@@ -206,4 +216,33 @@ header .navbar-default img{
 
 #footer{
   background-color: hsl(220,95%,8%);
+}
+
+/* Bootstrap Override */
+@media (max-width: 1199px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+  .dropdown{
+    float: none;
+  }
+  .signinform{
+    max-width: 60%;
+    margin: 0 auto;
+  }
 }
