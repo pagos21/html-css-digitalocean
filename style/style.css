@@ -234,14 +234,19 @@ header .navbar-default img{
   margin: 5px 0;
 }
 
-.test{
-  height: 220px;
+.l_bar li{
+  padding: 15px;
+  border-left: 2px solid grey;
+  list-style-type: none;
 }
 
-#deploy .test > a h4{
-  border-left: 2px solid grey 100%;
+.l_bar a{
+  text-decoration: none;
 }
 
+.l_bar li:hover{
+  border-left: 2px solid blue;
+}
 
 /* Bootstrap Override */
 @media (max-width: 1199px) {
@@ -267,7 +272,8 @@ header .navbar-default img{
     float: none;
   }
   .signinform{
-    max-width: 60%;
+    max-width: 70%;
+    min-width: 60%;
     margin: 0 auto;
   }
 }
