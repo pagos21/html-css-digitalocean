@@ -5,40 +5,13 @@
   box-sizing: border-box;
 }
 
-.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
-  margin-right: -118px;
-}
-
-.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
-  margin-left: -118px;
-}
-
-.navbar-default .navbar-toggle .my_icon-bar{
+.navbar-default .navbar-toggle .icon-bar{
   background-color: #006aff;
 }
 
 .navbar-default .navbar-toggle{
   border-color: transparent;
 }
-
-.carousel-indicators .active{
-  background-color: #006aff;
-}
-.carousel-indicators li{
-  border: 1px solid #006aff;
-}
-.carousel-item {
-    height: 350px;
-}
-.carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-}
-.carousel-indicators {
-    bottom: -40px;
-}
-
 
 .dropbtn {
   color: #757575;
@@ -66,89 +39,6 @@
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
 
-
-/* DBUG */
-
-#top{
-  color: white;
-  background-image: url(../img/aqua.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 800px;
-}
-#top h3{
-  font-weight: bold;
-  margin: 0;
-  /* padding: 20px; */
-  color: black;
-}
-
-#top .signinform{
-  background-color: white;
-  border-radius: 15px;
-}
-
-#top .sign_bar1{
-  background-color: #f3f5f9;
-  text-align: center;
-  padding: 0 14px;
-  border-radius: 15px 15px 0 0;
-}
-#top .sign_form1{
-  margin: 0 auto;
-  text-align: center;
-  width: 90%;
-}
-#top .sign_form1 .button1{
-  background-color: #006aff;
-  color: white;
-  width: 100%;
-  font-weight: bold;
-}
-#top .sign_form1 .button2{
-  border-radius: 5px;
-  background-color: white;
-  color: grey;
-  width: 100%;
-  border: 1px solid grey;
-  font-weight: bold;
-  margin-top: 4px;
-}
-#top .sign_form1 .button2 img{
-  max-width: 25px;
-  float: left;
-}
-
-#sponsor{
-  text-align: center;
-  background-color: #f3f5f9;
-}
-#sponsor img{
-  max-height: 70px;
-}
-
-#carosel{
-  background-color: #f3f5f9;
-}
-
-#worldwide{
-  background: #031b4e url(../img/data-center-map.svg);
-}
-
-#devs{
-  background-color: #f3f5f9;
-}
-
-#getstarted{
-  background-image: url(../img/bk_start.svg);
-}
-
-#footer{
-  background-color: hsl(220,95%,8%);
-}
-
-
 /* global vars */
 #macro_div >*{
   position: relative;
@@ -158,7 +48,6 @@ section{padding: 5% 0;}
 
 .txtw{color: white;}
 .txtg{color: hsla(0,0%,100%,0.5)}
-.txtb{color: black}
 
 .bold{font-weight: bold;}
 
@@ -178,7 +67,6 @@ section{padding: 5% 0;}
 
 .marginb{margin-bottom: 3%}
 .no_margin{margin: 0;}
-.no_padding{padding: 0;}
 
 .no_width{width: auto;}
 
@@ -242,6 +130,104 @@ header .navbar-default img{
   border-left: 2px solid grey 100%;
 }
 
+.carousel-indicators .active{
+  background-color: #006aff;
+}
+.carousel-indicators li{
+  border: 1px solid #006aff;
+}
+.carousel-item {
+    height: 350px;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.carousel-indicators {
+    bottom: -50px;
+}
+
+/* DBUG */
+
+#top{
+  color: white;
+  background-image: url(../img/aqua.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+#top h3{
+  font-weight: bold;
+  margin: 0;
+  padding: 20px;
+  color: black;
+}
+#top [class*="col-"]{
+  margin-top: 10%;
+}
+#top .signinform{
+  background-color: white;
+  border-radius: 15px;
+}
+
+#top .sign_bar1{
+  background-color: #f3f5f9;
+  text-align: center;
+  padding: 0 14px;
+  border-radius: 15px 15px 0 0;
+}
+#top .sign_form1{
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+#top .sign_form1 button{
+  background-color: #006aff;
+  color: white;
+  width: 100%;
+  font-weight: bold;
+}
+
+#top .sign_bott{
+  height: 50px;
+  color: #006aff;
+  text-align: center;
+}
+#top .sign_bott a{
+  padding: 10px;
+  border: #006aff solid 2px;
+  text-decoration: none;
+}
+
+#sponsor{
+  text-align: center;
+  background-color: #f3f5f9;
+}
+#sponsor img{
+  max-height: 70px;
+}
+
+#carosel{
+  background-color: #f3f5f9;
+}
+
+#worldwide{
+  background: #031b4e url(../img/data-center-map.svg);
+}
+
+#devs{
+  background-color: #f3f5f9;
+}
+
+#getstarted{
+  background-image: url(../img/bk_start.svg);
+}
+
+#footer{
+  background-color: hsl(220,95%,8%);
+}
 
 /* Bootstrap Override */
 @media (max-width: 1199px) {
