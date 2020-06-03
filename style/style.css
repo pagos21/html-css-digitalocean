@@ -6,11 +6,11 @@
 }
 
 .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
-  margin-right: -80%;
+  margin-right: -100%;
 }
 
 .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
-  margin-left: -80%;
+  margin-left: -100%;
 }
 
 .carousel-control.right_my{
@@ -303,5 +303,12 @@ header .navbar-default img{
   #top{
     height: auto;
     background-position: right;
+  }
+  .carousel-control.right_my span{
+    display: none
+  }
+
+  .carousel-control.left_my span {
+    display: none;
   }
 }
